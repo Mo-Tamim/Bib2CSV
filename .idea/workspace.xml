@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd02e03-4249-4651-bbc6-d085d1a86d2a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patents.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Bib2CSV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bib2CSV.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3fd02e03-4249-4651-bbc6-d085d1a86d2a" name="Default" comment="Some bugs were fixed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BIB2CSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/BIB2CSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSVFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CSVFile.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JsonFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/JsonFile.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +16,8 @@
       <file leaf-file-name="BIB2CSV.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BIB2CSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="99" column="7" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+            <state relative-caret-position="661">
+              <caret line="95" column="11" lean-forward="true" selection-end-line="105" selection-end-column="10" />
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
               </folding>
@@ -136,10 +128,19 @@
       <option name="presentableId" value="Default" />
       <updated>1515242014508</updated>
     </task>
+    <task id="LOCAL-00001" summary="Some bugs were fixed.">
+      <created>1542408368855</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542408368855</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24946696" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -147,11 +148,11 @@
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3281768" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32928178" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32928178" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32928178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32928178" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -165,6 +166,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some bugs were fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some bugs were fixed." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -174,7 +179,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -233,8 +238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BIB2CSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="99" column="7" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+        <state relative-caret-position="661">
+          <caret line="95" column="11" lean-forward="true" selection-end-line="105" selection-end-column="10" />
           <folding>
             <element signature="e#1#12#0" expanded="true" />
           </folding>
