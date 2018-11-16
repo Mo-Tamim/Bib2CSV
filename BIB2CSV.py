@@ -2,7 +2,7 @@
 import json
 import csv
 import os
-
+import pandas as pd
 
 
 class BIB2CSV:
@@ -18,7 +18,10 @@ class BIB2CSV:
             longline = False
             for line in BIBFilePointer:
                 line = line.strip()
-                if '@' not in line and not line.endswith('},') and not line.endswith('},}'):
+                if line == '':
+                    continue
+
+                if '@' not in line and not line.endswith('},') and not line.endswith('},}') and not line.startswith('}'):
                     line1 += line
                     longline = True
                     continue
@@ -29,14 +32,22 @@ class BIB2CSV:
                 if line.startswith('@'):
                     EntryKey = line[line.index('{') + 1:]
                     EntryKey = EntryKey.replace(',', '')
+                    entry_type = line[line.index('@')+1:line.index('{')]
                     self.BIBData[EntryKey] = {}
+                    self.BIBData[EntryKey]['EntryType'] = entry_type
                 else:
-                    name = line[:line.index('=')]
-                    value = line[line.index('=') + 2:line.index('}')]
-                    self.BIBData[EntryKey][name] = value
+                    try:
+                        field_name = line[:line.index('=')].strip()
+                        field_value = line[line.index('{') + 1:line.index('}')].strip()
+                        self.BIBData[EntryKey][field_name] = field_value
+                    except:
+                        print('The entry number ' + EntryKey + 'is not written according to Bib standard')
+
+        BIBFilePointer.close()
         # Save it to json file for future use
         with open(self.JsoName, 'w') as jo:
             json.dump(self.BIBData, jo, indent=2)
+            jo.close()
 
     def CreateCSV(self):
         # pdb.set_trace()
@@ -83,8 +94,8 @@ class BIB2CSV:
 
 
 def main():
+    BIBName = 'Patents.bib'
     CSVName ='CSVFile.csv'
-    BIBName = 'ConferencePublications.bib'
     JsonName = 'JsonFile.json'
     BibConverter = BIB2CSV(CSVName, BIBName, JsonName)
     BibConverter.make_dict()
